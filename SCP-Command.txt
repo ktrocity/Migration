@@ -1,0 +1,1 @@
+scp pijr@192.168.1.211:/home/pijr/range4.py C:\Users\kelie\OneDrive\Documents\Repositories\Migration\pijr
