@@ -56,12 +56,14 @@ if __name__ == "__main__":
         total_passed_number = int(result.replace(',', ''))
         
         # Determine which script to run based on the value
-        if 0 <= total_passed_number <= 500000:
+        if 0 <= total_passed_number <= 100000:
             script_path = 'range1.py'
-        elif 500001 < total_passed_number <= 1000000:
+        elif 100001 <= total_passed_number <= 500000:
             script_path = 'range2.py'
-        elif total_passed_number > 1000000:
+        elif 500001 <= total_passed_number <= 1000000:
             script_path = 'range3.py'
+        elif total_passed_number >= 1000001:
+            script_path = 'range4.py'
         else:
             print("Total passed number is out of expected range.")
             script_path = None
