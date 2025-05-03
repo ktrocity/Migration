@@ -9,12 +9,12 @@ NUM_LEDS = 90
 COLOR0 = (0, 0, 0)
 COLOR1 = (208, 141,170)
 COLOR2 = (208, 141, 100)
-COLOR3 = (177, 86, 121)
-COLOR4 = (124, 103, 131)
+COLOR3 = (177, 120, 121)
+COLOR4 = (155, 103, 131)
 COLOR5 = (255, 200, 80)
 
 # Initialize the DotStar strip
-leds = dotstar.DotStar(board.SCK, board.MOSI, NUM_LEDS, brightness=0.4)
+leds = dotstar.DotStar(board.SCK, board.MOSI, NUM_LEDS, brightness=0.75)
 
 def all_off():
     """Turn off all LEDs."""
@@ -73,7 +73,7 @@ while True:
     fade_led(58, COLOR1, 1)
     fade_led(8, COLOR5, 1)
     off_led(62, 1)
-    off_led(52, 1)
+    off_led(49, 1)
     time.sleep(0)
     fade_led(70, COLOR4, 1)
     fade_led(45, COLOR1, 1)
@@ -82,7 +82,7 @@ while True:
     time.sleep(0)
     fade_led(23, COLOR2, 1)
     fade_led(85, COLOR5, 1)
-    off_led(39, 1)
+    off_led(36, 1)
     off_led(88, 1)
     time.sleep(0)
 
@@ -97,13 +97,13 @@ while True:
     off_led(45, 1)
     time.sleep(0)
     fade_led(19, COLOR5, 1)
-    fade_led(24, COLOR3, 1)
+    fade_led(34, COLOR3, 1)
     off_led(23, 1)
     off_led(85, 1)
     time.sleep(0)
 
     fade_led(62, COLOR4, 1)
-    fade_led(52, COLOR3, 1)
+    fade_led(49, COLOR3, 1)
     off_led(3, 1)
     off_led(53, 1)
     time.sleep(0)
@@ -112,8 +112,8 @@ while True:
     off_led(11, 1)
     off_led(73, 1)
     time.sleep(0)
-    fade_led(39, COLOR3, 1)
+    fade_led(36, COLOR3, 1)
     fade_led(88, COLOR4, 1)
     off_led(19, 1)
-    off_led(24, 1)
+    off_led(34, 1)
     time.sleep(0)

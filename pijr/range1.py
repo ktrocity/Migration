@@ -15,7 +15,7 @@ COLOR4 = (255, 200, 155)
 COLOR5 = (255, 200, 205)
 
 # Initialize the DotStar strip
-leds = dotstar.DotStar(board.SCK, board.MOSI, NUM_LEDS, brightness=0.4)
+leds = dotstar.DotStar(board.SCK, board.MOSI, NUM_LEDS, brightness=.7)
 
 def all_off():
     """Turn off all LEDs."""
